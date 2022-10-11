@@ -7,6 +7,7 @@
   "description": "Api for donamesmatchfaces.com",
   "main": "index.js",
   "scripts": {
+    "migrate": "knex migrate:latest",
     "start": "npx tsc && node out/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -19,5 +20,14 @@
   "bugs": {
     "url": "https://github.com/ExploHash/dnmf-api/issues"
   },
-  "homepage": "https://github.com/ExploHash/dnmf-api#readme"
+  "homepage": "https://github.com/ExploHash/dnmf-api#readme",
+  "dependencies": {
+    "@types/node": "^18.8.3",
+    "axios": "^1.1.2",
+    "fastify": "^4.6.0",
+    "knex": "^2.3.0",
+    "mysql2": "^2.3.3",
+    "node-schedule": "^2.1.0",
+    "objection": "^3.0.1"
+  }
 }

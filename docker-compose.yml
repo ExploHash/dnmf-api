@@ -1,0 +1,12 @@
+version: '3.7'
+
+services:
+  database:
+    image: 'mariadb:latest'
+    environment:
+      - MYSQL_ROOT_PASSWORD=dnmf
+      - MYSQL_DATABASE=dnmf
+      - MYSQL_USER=dnmf
+      - MYSQL_PASSWORD=dnmf
+    ports:
+      - '3306:3306'
